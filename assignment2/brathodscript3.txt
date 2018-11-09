@@ -1,0 +1,49 @@
+-- brathodscript3.txt
+
+-- File3
+
+-- Script 3 Queries 
+
+-- QUERY 1: Show the description of all the products
+
+-- QUERY 2: Show the city of all customers with no repeats
+
+
+-- QUERY 3: Show all the data in the agent table, but show them in order of their cities
+
+
+-- QUERY 4: Show the first and last name of all customers from Springfield
+
+
+-- QUERY 5: List the last name of all customers who deal with Regis
+
+
+-- QUERY 6: List the description of any product with the letters "pad" or "Pad" in the description name
+
+
+-- QUERY 7: For any customer who has actually purchased products, list the last name of each customer, the description of each product they have purchase and the quantity they have purchased of that product
+
+
+-- QUERY 8: Find the total number of products purchased by Homer. Search using his first name, not his customer id.  Just display the amount but give it a title of "Homer's Total Purchases" when the query is run. 
+
+
+-- QUERY 9: For any customer who has actually purchased products, find the total number of products purchased by each customer, print out the first and last name of the customer and their total number of  purchases.
+
+
+-- QUERY 10: List the descriptions and quantity on hand of any products that have not been purchased by anyone
+
+
+-- QUERY 11: List the description and quantity of any product that has not been purchase by Fred Flintstone (referencing his name in the query, both first and last)
+
+
+-- QUERY 12: List the first and last name of any agent and customer where the agent deals with a customer from the same city as the agent.
+
+
+-- QUERY 13: List the total number of knee pads that have been purchase. Give the result a nice title. 
+
+
+-- QUERY 14: Find all products  (description) which have been purchased by more than 3 customers 
+
+
+-- QUERY 15: Find the first name and last name of all agents who deal with customers that have purchased knee pads.
+

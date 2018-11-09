@@ -1,0 +1,75 @@
+--------------
+SHOW DATABASES
+--------------
+
+Database
+information_schema
+assn2db
+brathod2db
+brathodassign2db
+brathodassn2db
+myfirstdatabase
+mysql
+performance_schema
+--------------
+DROP DATABASE IF EXISTS brathodassign2db
+--------------
+
+--------------
+CREATE DATABASE brathodassign2db
+--------------
+
+--------------
+GRANT USAGE ON *.* TO 'ta'@'localhost'
+--------------
+
+--------------
+DROP USER 'ta'@'localhost'
+--------------
+
+--------------
+CREATE USER 'ta'@'localhost' IDENTIFIED BY 'cs3319'
+--------------
+
+--------------
+GRANT ALL PRIVILEGES ON yourwesternuseridassign2db.* TO 'ta'@'localhost'
+--------------
+
+--------------
+FLUSH PRIVILEGES
+--------------
+
+--------------
+SHOW TABLES
+--------------
+
+--------------
+CREATE TABLE agent (agentid CHAR(2) NOT NULL, fname CHAR(30), lname CHAR(30), city CHAR(15), commission INT, PRIMARY KEY (agentid))
+--------------
+
+--------------
+CREATE TABLE customer (customerid CHAR(2) NOT NULL, fname CHAR(30), lname CHAR(30), city CHAR(15), phoneNum INT, PRIMARY KEY (customerid))
+--------------
+
+--------------
+CREATE TABLE product (productid CHAR(2) NOT NULL, description CHAR(20), costPerItem INT, quantity INT, PRIMARY KEY (productid))
+--------------
+
+--------------
+CREATE TABLE hasPurchased(customerid CHAR(2) NOT NULL, quantityPurchased INT, productid CHAR(2) NOT NULL, PRIMARY KEY(productid, customerid), FOREIGN KEY (productid) REFERENCES product(productid), FOREIGN KEY (customerid) REFERENCES customer(customerid))
+--------------
+
+--------------
+CREATE TABLE dealsWith(agentid CHAR(2), customerid CHAR(2), PRIMARY KEY (agentid, customerid), FOREIGN KEY (agentid) REFERENCES agent(agentid), FOREIGN KEY (customerid) REFERENCES customer(customerid))
+--------------
+
+--------------
+SHOW TABLES
+--------------
+
+Tables_in_brathodassign2db
+agent
+customer
+dealsWith
+hasPurchased
+product
